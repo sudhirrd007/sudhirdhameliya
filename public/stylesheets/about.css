@@ -1,0 +1,15 @@
+#bg-text {
+    -webkit-text-stroke: 1px #e9d3d3;
+}
+
+#fg-text {
+    color: #dc3545;
+}
+
+.progress {
+    border-radius: 10px;
+}
+
+.progress .progress-bar {
+    border-radius: 10px;
+}
