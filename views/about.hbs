@@ -1,0 +1,194 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="stylesheets/about.css">
+    <style>
+        #navbarNav>ul>li.nav-item.about>a {
+            color: #dc3545;
+        }
+    </style>
+</head>
+
+<body>
+
+    {{!-- About Start  --}}
+    {{!-- bootstrap container-fluid --}}
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 id="bg-text" class="display-1 text-uppercase text-white">About</h1>
+                <h1 id="fg-text" class="position-absolute">ABOUT ME</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Android & Web Developer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget dolor ac sem lacinia
+                        consectetur. Morbi fringilla suscipit sagittis. Vivamus at ipsum non ligula interdum laoreet
+                        vitae id sapien. In sagittis tempor nulla, sagittis efficitur nibh commodo quis. Nunc facilisis
+                        arcu eu commodo hendrerit. Vestibulum varius nisi facilisis, interdum turpis.</p>
+                    
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2">
+                            <h6>Name: <span class="text-secondary">{{name}}</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>Birthday: <span class="text-secondary">{{birthdate}}</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>Phone: <span class="text-secondary">{{mobile}}</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>Email: <span class="text-secondary">{{email}}</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>Address: <span class="text-secondary">{{address}}</span></h6>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-outline-danger mr-4">Download CV</a>
+                    <a href="" class="btn btn-outline-danger">Learn More</a>
+                </div>
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="images/home.jpeg" alt="SELFI">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {{!-- About End  --}}
+
+    {{!-- Skill Start  --}}
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">HTML</h6>
+                            <h6 class="font-weight-bold">{{html}}</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: {{html}};"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">CSS</h6>
+                            <h6 class="font-weight-bold">{{css}}</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" style="width: {{css}};"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Python</h6>
+                            <h6 class="font-weight-bold">{{python}}</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" style="width: {{python}};"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Javascript</h6>
+                            <h6 class="font-weight-bold">{{javascript}}</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" style="width: {{javascript}};"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">C#</h6>
+                            <h6 class="font-weight-bold">{{csharp}}</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-dark" style="width: {{csharp}};"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Java</h6>
+                            <h6 class="font-weight-bold">{{java}}</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" style="width: {{java}};"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{!-- Skill End  --}}
+
+    <!-- qualification start -->
+    {{!-- bootstrap container-fluid --}}
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4" style="color: #dc3545;">My Education</h3>
+                    <div class="border-left border-danger pt-2 pl-4 ml-2">
+                        <div class="position-relative ex-me mb-4">
+                            <h5 class="font-weight-bold mb-1">Secondary Education</h5>
+                            <p class="mb-2"><strong>GSEB Board</strong> | <small>2014 - 2016</small></p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos
+                                ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum
+                                stet lorem diam</p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <h5 class="font-weight-bold mb-1">Bachelor Of Engineering (IT)</h5>
+                            <p class="mb-2"><strong>Gujarat Technological University</strong> | <small>2016 -
+                                    2020</small></p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos
+                                ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum
+                                stet lorem diam</p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <h5 class="font-weight-bold mb-1">PG Diploma</h5>
+                            <p class="mb-2"><strong>Conestoga College</strong> | <small>2021 - Current</small></p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos
+                                ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum
+                                stet lorem diam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4" style="color: #dc3545;">My Expericence</h3>
+                    <div class="border-left border-danger pt-2 pl-4 ml-2">
+                        <div class="position-relative ex-me mb-4">
+                            <h5 class="font-weight-bold mb-1">Web Developer Intern</h5>
+                            <p class="mb-2"><strong>Gravity Technologies</strong> | <small> Excellent</small></p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos
+                                ipsum
+                                est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet
+                                lorem diam</p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <h5 class="font-weight-bold mb-1">Python Intern</h5>
+                            <p class="mb-2"><strong>Codesvera</strong> | <small> Good</small></p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos
+                                ipsum
+                                est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet
+                                lorem diam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{!-- qualification end --}}
+
+
+
+</body>
+
+</html>

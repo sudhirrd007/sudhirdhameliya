@@ -14,4 +14,23 @@ router.get('/', function(req, res, next) {
   res.render('home', homeData);
 });
 
+
+var aboutData = {
+  name: "Sudhir Dhameliya",
+  birthdate: "27 March 1998",
+  mobile: "+226 899 0315",
+  email: "sudhir007@gmail.com",
+  address: "Regina Street, Waterloo, Canada",
+  html: "95%",
+  css: "95%",
+  python: "85%",
+  javascript: "95%",
+  csharp: "80%",
+  java: "90%"
+}
+router.get("/about", function(req, res, next) {
+  res.render('about', aboutData);
+});
+
+
 module.exports = router;
