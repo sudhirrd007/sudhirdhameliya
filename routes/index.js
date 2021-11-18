@@ -33,4 +33,15 @@ router.get("/about", function(req, res, next) {
 });
 
 
+var projectsData = {
+  proj1: "https://github.com/sudhirrd007/Weather_APP_Django",
+  proj2: "https://github.com/sudhirrd007/Amazon_Food_Review_Prediction",
+  proj3: "https://github.com/sudhirrd007/LeetCode-scraper",
+  proj4: "https://www.kaggle.com/sudhirrd007/diabetes-prediction-using-only-knn-92-8"
+}
+router.get("/projects", function(req, res, next) {
+  res.render('projects', projectsData);
+});
+
+
 module.exports = router;
