@@ -1,10 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    {{{body}}}
-  </body>
+<head>
+  <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  {{!-- external bootstrap 4 file, Latest compiled and minified CSS --}}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  <script src="javascripts/navigation.js"></script>
+</head>
+
+<body>
+
+  {{!-- header starts --}}
+  <header class="header-area">
+    {{!-- Bootstrap navbar(modified), https://getbootstrap.com/docs/4.0/components/navbar/ --}}
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+      <a class="navbar-brand" href="#">
+        {{!-- LOGO: https://www.google.com/url?sa=i&url=https%3A%2F%2Fpitchbook.com%2Fprofiles%2Fcompany%2F60861-61&psig=AOvVaw1hEYYOmZMNggjRcy1Gb1kX&ust=1637679542825000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOiozJf0ovQCFQAAAAAdAAAAABAD --}}
+        <img src="images/logo.png" onclick="goto('')" alt="LOGO" width="170px" height="80px">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mr-auto"> </div>
+        <ul class="navbar-nav">
+          <li class="nav-item active home">
+            <a class="nav-link" href="#" onclick="goto('')">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item about">
+            <a class="nav-link" href="#" onclick="goto('about')">About Me</a>
+          </li>
+          <li class="nav-item projects">
+            <a class="nav-link" href="#" onclick="goto('projects')">Projects</a>
+          </li>
+          <li class="nav-item contact">
+            <a class="nav-link" href="#" onclick="goto('contact')">Contact </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  {{!-- header ends --}}
+
+  {{{body}}}
+
+
+  <!-- Footer starts -->
+  <footer>
+    {{!-- bootstrap container-fluid: full width container, spanning the entire width of the viewport --}}
+    <div class="container-fluid bg-primary text-white mt-5 py-1 px-sm-1 px-md-5">
+      
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#" onclick="goto('')">Home</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#" onclick="goto('about')">About Me</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#" onclick="goto('projects')">My Works</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#" onclick="goto('contact')">Contact</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Help</a>
+            </div>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">SudhirDhameliya</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="#">Sudhir Dhameliya</a>
+            </p>
+        </div>
+    </div>
+    </footer>
+  <!-- Footer ends-->
+
+</body>
 </html>
