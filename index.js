@@ -8,4 +8,4 @@ app.use("/", (req, res) => {
 
 app.listen(3000);
 
-console.log("SERVER RENNING");
+console.log("SERVER IS RUNNING ON PORT: 3000");
