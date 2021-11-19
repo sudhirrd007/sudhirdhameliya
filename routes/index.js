@@ -44,4 +44,9 @@ router.get("/projects", function(req, res, next) {
 });
 
 
+router.get("/contact", function(req, res, next) {
+  res.render('contact');
+});
+
+
 module.exports = router;
