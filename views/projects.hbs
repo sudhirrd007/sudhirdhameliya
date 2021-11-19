@@ -1,0 +1,63 @@
+<html>
+<head>
+    <link rel="stylesheet" href="stylesheets/projects.css">
+    <script src="javascripts/projects.js"></script>
+    <style>
+        #navbarNav>ul>li.nav-item.projects>a {
+            color: #dc3545;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="overlay"> </div>
+
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 id="bg-text" class="display-1 text-uppercase text-white">PROJECTS</h1>
+                <h1 id="fg-text" class="position-absolute text-uppercase">MY PROJECTS</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="quad">
+        {{!-- add event listeners --}}
+        <figure onmouseenter="on()" onmouseleave="off() ">
+            {{!-- _blank: will open link in new window --}}
+            <a href={{proj1}} target="_blank">
+                <img src="images/project1.PNG" alt="Weather Web App" style="height: 304px; width: 425.67px;"
+                    target="_blank">
+            </a>
+            <a id="projectbtn" type="button" href={{proj1}} class="btn btn-primary" target="_blank"> Django weather App >> </a>
+        </figure>
+
+        <figure onmouseenter="on()" onmouseleave="off()">
+            <a href={{proj2}} target="_blank">
+                <img src="images/project2.png" alt="A,azon Food Review" style="height: 304px; width: 425.67px;"
+                    target="_blank">
+            </a>
+            <a id="projectbtn" type="button" href={{proj2}} class="btn btn-primary" target="_blank"> Amazon Food Review Prediction >> </a>
+        </figure>
+
+        <figure onmouseenter="on()" onmouseleave="off()">
+            <a href={{proj3}} target="_blank">
+                <img src="images/project3.png" alt="Leetcode Scraper" style="height: 304px; width: 425.67px;"
+                    target="_blank">
+            </a>
+            <a id="projectbtn" type="button" href={{proj3}} class="btn btn-primary" target="_blank"> Leetcode Scraper >> </a>
+        </figure>
+
+        <figure onmouseenter="on()" onmouseleave="off()">
+            <a href={{proj4}} target="_blank">
+                <img src="images/project4.png" alt="Diabetes Prediction" style="height: 304px; width: 425.67px;"
+                    target="_blank">
+            </a>
+            <a id="projectbtn" type="button" href={{proj4}} class="btn btn-primary" target="_blank"> diabetes
+                Prediction >> </a>
+        </figure>
+    </div>
+
+</body>
+</html>
