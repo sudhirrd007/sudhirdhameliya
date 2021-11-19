@@ -1,0 +1,52 @@
+<html>
+<head>
+    <link rel="stylesheet" href="stylesheets/contact.css">
+    <style>
+        #navbarNav>ul>li.nav-item.contact>a {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contact Start -->
+    {{!-- bootstrap container-fluid --}}
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 id="bg-text" class="display-1 text-uppercase text-white">Contact</h1>
+                <h1 id="fg-text" class="position-absolute text-uppercase">Contact Me</h1>
+            </div>
+            
+            <div class="justify-content-center">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputName">Name</label>
+                        <input type="text" class="form-control" id="exampleInputName" placeholder="Enter Your Name"
+                            required="required" data-validation-required-message="Please enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
+                            placeholder="Enter Your email" required="required"
+                            data-validation-required-message="Please enter your email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputTextarea">Message</label>
+                        <textarea class="form-control" id="exampleInputTextarea" placeholder="Enter Your Message"
+                            cols="30" rows="8"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!-- Contact End -->
+
+</body>
+
+</html>
