@@ -1,0 +1,53 @@
+div#quad {
+    font-size: 0;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0 0 12px #dc3546d2;
+}
+
+div#quad figure {
+    padding: 3px 6px 3px 6px;
+    margin: 0;
+    width: 50%;
+    height: auto;
+    transition: 1s;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+#quad {
+    padding: 3px 6px 3px 3px;
+}
+
+div#quad figure:hover {
+    cursor: pointer;
+    z-index: 4;
+}
+
+div#quad figure img {
+    width: 100%;
+    height: auto;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+    font-size: 100px;
+    text-align: center;
+}
+
+#projectbtn {
+    width: 100%; 
+    height: 100%; 
+    border-radius: 0 0 10px 10px;
+}
