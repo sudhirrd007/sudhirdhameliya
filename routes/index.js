@@ -9,7 +9,7 @@ var homeData = {
   github: "https://github.com/sudhirrd007",
   instagram: "https://www.instagram.com/sudhir_dhameliya_007/"
 }
-/* GET home page. */
+// home page ---------------------------------------------
 router.get('/', function(req, res, next) {
   res.render('home', homeData);
 });
@@ -28,6 +28,7 @@ var aboutData = {
   csharp: "80%",
   java: "90%"
 }
+// about page ----------------------------------------------
 router.get("/about", function(req, res, next) {
   res.render('about', aboutData);
 });
@@ -39,11 +40,13 @@ var projectsData = {
   proj3: "https://github.com/sudhirrd007/LeetCode-scraper",
   proj4: "https://www.kaggle.com/sudhirrd007/diabetes-prediction-using-only-knn-92-8"
 }
+// projects page ------------------------------------------
 router.get("/projects", function(req, res, next) {
   res.render('projects', projectsData);
 });
 
 
+// contact page --------------------------------------------
 router.get("/contact", function(req, res, next) {
   res.render('contact');
 });
