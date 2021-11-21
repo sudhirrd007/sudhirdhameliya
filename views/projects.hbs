@@ -10,13 +10,15 @@
 </head>
 
 <body>
-    
+    {{!-- css properties of this <div> will change on specific events --}}
     <div id="overlay"> </div>
 
     <div class="container-fluid py-5" id="contact">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
+                {{!-- background text --}}
                 <h1 id="bg-text" class="display-1 text-uppercase text-white">PROJECTS</h1>
+                {{!-- forground text, while will be on top of previous element --}}
                 <h1 id="fg-text" class="position-absolute text-uppercase">MY PROJECTS</h1>
             </div>
         </div>
@@ -24,6 +26,8 @@
 
     <div id="quad">
         {{!-- add event listeners --}}
+        {{!-- onmouseenter: when mouse pointer goes in the area of <figure> --}}
+        {{!-- onmouseleave: when mouse pointer exit from <figure> --}}
         <figure onmouseenter="on()" onmouseleave="off() ">
             {{!-- _blank: will open link in new window --}}
             <a href={{proj1}} target="_blank">

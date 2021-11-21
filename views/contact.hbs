@@ -14,14 +14,19 @@
     <div class="container-fluid py-5" id="contact">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
+                {{!-- background text --}}
                 <h1 id="bg-text" class="display-1 text-uppercase text-white">Contact</h1>
+                {{!-- forground text, while will be on top of previous element --}}
                 <h1 id="fg-text" class="position-absolute text-uppercase">Contact Me</h1>
             </div>
             
             <div class="justify-content-center">
+                {{!-- create form eleent --}}
                 <form>
                     <div class="form-group">
+                        {{!-- link "Name" label with "input" element --}}
                         <label for="exampleInputName">Name</label>
+                        {{!-- data-validation-required-message: if user try to keep the field blank then he/she gets message --}}
                         <input type="text" class="form-control" id="exampleInputName" placeholder="Enter Your Name"
                             required="required" data-validation-required-message="Please enter your name">
                     </div>
@@ -39,10 +44,10 @@
                             cols="30" rows="8"></textarea>
                     </div>
 
+                    {{!-- btn-danger: red color --}}
                     <button type="submit" class="btn btn-danger">Submit</button>
                 </form>
             </div>
-
         </div>
     </div>
     <!-- Contact End -->
