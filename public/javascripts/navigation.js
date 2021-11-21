@@ -1,5 +1,5 @@
 // to navigate between pages
-function goto(page) {
+function goto() {
     // get current page address
     var segments = window.location.href.split("/");
     var baseUrl = String(segments.slice(0,3).join("/"));
